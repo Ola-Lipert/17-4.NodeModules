@@ -1,3 +1,5 @@
+'use strict';
+
 var OSinfo = require('../modules/OSInfo');
 
 process.stdin.setEncoding('utf-8');//enkodowanie przyjmowanych danych
@@ -20,7 +22,7 @@ process.stdin.on('readable', function() {//nasłuchiwanie na zdarzenie odczytu
                 break;
             
             case '/getOSinfo':
-                getOSinfo();
+                OSinfo.print();
                 break;
 
             default:
