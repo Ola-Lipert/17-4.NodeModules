@@ -22,7 +22,7 @@ process.stdin.on('readable', function() {//nasłuchiwanie na zdarzenie odczytu
                 break;
             
             case '/getOSinfo':
-                OSinfo.print();
+                OSInfo.print();
                 break;
 
             default:
